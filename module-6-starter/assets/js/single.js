@@ -70,8 +70,7 @@ var displayIssues = function(issues) {
     // check if issue is an actual issue or a pull request
     if (issues[i].pull_request) {
       typeEl.textContent = "(Pull request)";
-    }
-    else {
+    } else {
       typeEl.textContent = "(Issue)";
     }
 
@@ -96,7 +95,5 @@ var displayWarning = function(repo) {
   // append to warning container
   limitWarningEl.appendChild(linkEl);
 };
-
-getRepoIssues();
 
 getRepoName();
